@@ -29,7 +29,7 @@ int _strncmp(const char *str1, const char *str2, size_t n)
 
 char *_getenv(char *name)
 {
-	i = 0;
+	int i = 0;
 
 	while (environ[i])
 	{
