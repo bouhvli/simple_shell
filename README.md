@@ -7,3 +7,4 @@ this program mimics the behavieur of the Thompson shell
 - how to create processes.
 - how to use the three prototypes of main
 - how does the shell uses the path
+- how to use execve
