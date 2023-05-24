@@ -32,3 +32,5 @@ $ slx
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c main.h -o hsh
 ```
+by
+### hamza bouhali and naceur azzeddine
