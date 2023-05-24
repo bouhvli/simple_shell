@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _getline - work the same way as the getline function.
+ * _getstr - work the same way as the getline function.
  * @line: where we want ot store what we read from the user.
  * @stm: the stream where data is sent to and read.
  * Return: -1 in case of failure and number of bytes if

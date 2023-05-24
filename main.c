@@ -29,7 +29,7 @@ int main(int ac, char *argv[])
 		count++;
 		if ((isatty(STDIN_FILENO) == 1) && (isatty(STDOUT_FILENO) == 1))
 			_printf("#cisfun$ ", 1);
-		val = _getstr(&input_string, STDIN_FILENO);
+		val = getline(&input_string, STDIN_FILENO);
 		if (val == -1)
 		{
 			free(input_string);
