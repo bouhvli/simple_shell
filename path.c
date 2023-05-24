@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * path_finder - this function finds the path and return it
  * @tokens: the command.
@@ -8,7 +7,6 @@
  * Return: NULL if path is not found or if an error occured,
  * or return THE path with the command.
  */
-
 char *path_finder(char *tokens, char *s, int count)
 {
 	char *dir, *full_path, *p, *sl, *command = _strdup(tokens);
@@ -66,3 +64,4 @@ char *path_finder(char *tokens, char *s, int count)
 	free(command);
 	return (command_path);
 }
+
