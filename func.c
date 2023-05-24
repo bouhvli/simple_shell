@@ -131,7 +131,7 @@ void _exit_error(char *cmd, char *av, int count, char *status)
 	_printf(y, 2);
 	_printf(": ", 2);
 	_printf(cmd, 2);
-	_printf(": illegal number:", 2);
+	_printf(": Illegal number: ", 2);
 	_printf(status, 2);
 	_printf("\n", 2);
 	free(y);
