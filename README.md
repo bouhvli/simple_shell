@@ -5,3 +5,4 @@ this program mimics the behavieur of the Thompson shell
 - how to work with pid and ppid
 - how to manipulate the env varaibles
 - how to create processes.
+- how to use the three prototypes of main
