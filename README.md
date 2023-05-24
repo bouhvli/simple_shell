@@ -18,7 +18,7 @@ echo "alx" | /bin/sh
 /bin/sh: 1: alx: not found
 # in interactive mode 
 $ slx
-./hsh: 1: slx: not found
+sh: 1: slx: not found
 ```
 same error with our shell hsh:
 ```bash
@@ -26,7 +26,7 @@ echo "alx" | ./hsh
 ./hsh: 1: alx: not found
 # in interactive mode 
 $ slx
-sh: 1: slx: not found
+./hsh: 1: slx: not found
 ```
 ## to use this program and teste it your self 
 ```bash
