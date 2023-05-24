@@ -12,13 +12,6 @@ char *path_finder(char *tokens, char *s, int count)
 	char *dir, *full_path, *p, *sl, *command = _strdup(tokens);
 	char *path = _getenv("PATH"), *command_path = NULL;
 
-	if (_strncmp(path, "PATH=/bin", 9) == 0)
-	{
-		full_path = malloc(MAX_TOKEN_LENGTH);
-		_sprintf(full_path, "%s/%s", "/bin", command);
-		free(command);
-		return (full_path);
-	}
 	if (path == NULL || _strcmp(path, "") == 0)
 	{
 		if (access(command, X_OK | F_OK) == 0)
@@ -30,6 +23,13 @@ char *path_finder(char *tokens, char *s, int count)
 			_error(command, s, count);
 			exit(127);
 		}
+	}
+	if (_strncmp(path, "PATH=/bin", 9) == 0)
+	{
+		full_path = malloc(MAX_TOKEN_LENGTH);
+		_sprintf(full_path, "%s/%s", "/bin", command);
+		free(command);
+		return (full_path);
 	}
 	while (*path)
 	{
