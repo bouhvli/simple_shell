@@ -13,19 +13,14 @@ this program mimics the behavieur of the Thompson shell
 will work the same way as the sh in interactive and non-interactive mode
 
 example of sh:
-`
-echo "alx" | /bin/sh
+`echo "alx" | /bin/sh
 /bin/sh: 1: alx: not found
 # in interactive mode 
 $ slx
-./hsh: 1: slx: not found
-
-`
+./hsh: 1: slx: not found`
 same error with our shell hsh:
-`
-echo "alx" | ./hsh
+`echo "alx" | ./hsh
 ./hsh: 1: alx: not found
 # in interactive mode 
 $ slx
-sh: 1: slx: not found
-`
+sh: 1: slx: not found`
