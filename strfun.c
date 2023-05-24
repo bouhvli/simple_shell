@@ -2,9 +2,9 @@
 
 /**
  * _strcmp - compares two strings
- * @str1: the first string
- * @str2: the seocnd string
- * Return: 0 if both string are same, otherwise the diff btw str1 and str2
+ * @str1: The first string
+ * @str2: the second string
+ * Return: 0 if both string are same. Otherwise the diff btw str1 and str2
  */
 
 int _strcmp(char *str1, char *str2)
@@ -16,6 +16,7 @@ int _strcmp(char *str1, char *str2)
 
 	return (str1[idx] - str2[idx]);
 }
+
 
 /**
  * _strcpy - copy a string into another string
@@ -59,6 +60,7 @@ char *_strncpy(char *dest, const char *src, size_t num)
 	}
 	return (dest);
 }
+
 
 /**
  * _strdup - duplicates a string
