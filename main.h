@@ -19,7 +19,7 @@ extern char **environ;
 int exit_status;
 
 /*the input hanlers */
-ssize_t _getline(char **stdin_line, int stm);
+ssize_t _getstr(char **stdin_line, int stm);
 char *path_finder(char *tokens, char *s, int count);
 char *_getenv(char *name);
 

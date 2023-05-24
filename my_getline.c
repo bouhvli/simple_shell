@@ -6,7 +6,7 @@
  * Return: -1 in case of failure and number of bytes if
  * everything is working as expected.
 */
-ssize_t _getline(char **line, int stm)
+ssize_t _getstr(char **line, int stm)
 {
     ssize_t nb_bytes_read, count_nb_bytes_read = 0;
     size_t length = 0;
