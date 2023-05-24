@@ -13,14 +13,22 @@ this program mimics the behavieur of the Thompson shell
 will work the same way as the sh in interactive and non-interactive mode
 
 example of sh:
-`echo "alx" | /bin/sh
+```bash
+echo "alx" | /bin/sh
 /bin/sh: 1: alx: not found
 # in interactive mode 
 $ slx
-./hsh: 1: slx: not found`
+./hsh: 1: slx: not found
+```
 same error with our shell hsh:
-`echo "alx" | ./hsh
+```bash
+echo "alx" | ./hsh
 ./hsh: 1: alx: not found
 # in interactive mode 
 $ slx
-sh: 1: slx: not found`
+sh: 1: slx: not found
+```
+## to use this program and teste it your self 
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c main.h -o hsh
+```
