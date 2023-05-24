@@ -24,6 +24,7 @@ void handleComment(char *string)
 				break;
 			}
 		}
-		i++;
+		if (string[i] != '\0')
+			i++;
 	}
 }
