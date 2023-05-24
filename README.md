@@ -9,4 +9,23 @@ this program mimics the behavieur of the Thompson shell
 - how does the shell uses the path
 - how to use execve
 - what and how to use EOF / "end-of-file"
-- 
+## Output
+will work the same way as the sh in interactive and non-interactive mode
+
+example of sh:
+`
+echo "alx" | /bin/sh
+/bin/sh: 1: alx: not found
+# in interactive mode 
+$ slx
+./hsh: 1: slx: not found
+
+`
+same error with our shell hsh:
+`
+echo "alx" | ./hsh
+./hsh: 1: alx: not found
+# in interactive mode 
+$ slx
+sh: 1: slx: not found
+`
