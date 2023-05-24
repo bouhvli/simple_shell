@@ -31,7 +31,6 @@ int main(int ac, char *argv[])
 		if ((isatty(STDIN_FILENO) == 1) && (isatty(STDOUT_FILENO) == 1))
 			_printf("#cisfun$ ", 1);
 		val = _getline(&input_string, STDIN_FILENO);
-		/*val = getline(&input_string, &n, stdin);*/
 		if (val == -1)
 		{
 			free(input_string);
@@ -39,7 +38,6 @@ int main(int ac, char *argv[])
 		}
 		if (_strspn(input_string, " \t\n") == _strlen(input_string))
 				continue;
-		/*input_string[_strcspn(input_string, "\n")] = '\0';*/
 		handl_exit(input_string, exit_status, argv[0], count);
 		handl_ctrl_d(val, input_string);
 		if (_strcmp(input_string, "env") == 0)
