@@ -50,7 +50,7 @@ int main(int ac, char *argv[])
 			i = 0;
 			while (tokens[i] != NULL)
 				free(tokens[i++]);
-			if ((isatty(STDIN_FILENO) == 0) && exit_status == 127)
+			if ((isatty(STDIN_FILENO) == 0) && (exit_status == 127 || exit_status == 2))
 				{
 				free(input_string);
 				exit(exit_status);
